@@ -41,7 +41,7 @@ const Navbar = () => {
     <>
       <nav ref={ref} className="navbar">
         <button
-          className="toogle"
+          className="toggle"
           onClick={() => setNavbarOpen((prev) => !prev)}
         >
           {navbarOpen ? (

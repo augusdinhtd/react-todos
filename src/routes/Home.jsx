@@ -14,7 +14,7 @@ const TodoApp = () => {
       {/* <div className="wrapper"> */}
       <div className="todos">
         <Header>
-          <h1 style={{ textAlign: "center", color: "blue" }}>todos</h1>
+          <h1 style={{ textAlign: "center" }}>todos</h1>
           <p>Items will persist in the browser local storage</p>
         </Header>
         <TodosLogic />

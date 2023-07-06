@@ -11,16 +11,6 @@ body {
   height: 100vh;
   font-weight: 400;
 }
-
-a {
-  color: #333;
-  text-decoration: none;
-}
-/* Active route */
-.active {
-  color: #005bb3;
-}
-
 .wrapper {
   width: 100%;
   padding: 8rem 20px 3rem;
@@ -68,16 +58,28 @@ a {
   display: block;
 }
 
+a {
+  color: #333;
+  text-decoration: none;
+}
+/* Active route */
+.active {
+  color: #8a4baf;
+}
+
 /*==========================
 About route 
 ========================*/
+
 .about {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 .about_list {
   list-style: none;
 }
+
 .about_list a {
   padding: 20px 0;
   display: inline-block;
@@ -85,50 +87,46 @@ About route
   font-weight: bold;
 }
 .about_list a:hover {
-  color: #005bb3;
+  color: #8a4baf;
 }
 .main_content {
   max-width: 650px;
 }
+
 .main_content h2 {
   margin-bottom: 15px;
   line-height: 30px;
   font-size: 26px;
 }
+
 .main_content p {
   line-height: 25px;
-}
-/* Media Queries */
-@media screen and (min-width: 480px) {
-  div.wrapper h1 {
-    font-size: 6rem;
-  }
-  .about {
-    display: grid;
-    grid-template-columns: 200px minmax(0, 1fr);
-  }
 }
 
 /*==========================
 Sidebar navigation
 ========================*/
+
 .navbar {
   position: relative;
 }
+
 button {
   cursor: pointer;
-  background: transparent;;
+  background: transparent;
   border: none;
   font-size: 20px;
 }
+
 .navbar .toggle {
   position: fixed;
   left: 30px;
   top: 40px;
   cursor: pointer;
-  background: transparent;;
+  background: transparent;
   border: none;
 }
+
 .menu-nav {
   list-style: none;
   position: absolute;
@@ -139,25 +137,32 @@ button {
   max-width: 290px;
   z-index: 9;
   font-size: 18px;
-  box-shadow: 0 10px 15px -3px rgb(46 41 51 / 8%), 0 4px 6px -2px rgb(71 63 79 / 16%);
+  box-shadow: 0 10px 15px -3px rgb(46 41 51 / 8%),
+    0 4px 6px -2px rgb(71 63 79 / 16%);
+
   transform: translateX(-100px);
   transition: transform ease-in-out 0.2s;
   /* transition: width ease 0.2s; */
 }
+
 .menu-nav.show-menu {
   width: 100%;
   transform: translateX(0px);
 }
-.menu-nav li a, .menu-nav li span {
+
+.menu-nav li a,
+.menu-nav li span {
   display: block;
   padding: 1rem;
 }
+
 .log-in {
   color: #777;
   border-top: 1px solid #efecec;
   margin-top: 15px;
   font-size: 15px;
 }
+
 /* logout */
 .logout {
   position: absolute;
@@ -166,5 +171,17 @@ button {
   display: flex;
   gap: 2rem;
   font-size: 20px;
-  color: #005bb3;
+  color: #8a4baf;
+}
+
+/* Media Queries */
+@media screen and (min-width: 480px) {
+  div.wrapper h1 {
+    font-size: 6rem;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 200px minmax(0, 1fr);
+  }
 }
