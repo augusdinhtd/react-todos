@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import TodosLogic from "@/components/TodosLogic";
 import Modal from "@/components/Modal";
 import Form from "@/components/Form";
-import UncontrolledForm from "@/components/UncontrolledForm";
 
 const TodoApp = () => {
   return (
@@ -10,7 +9,7 @@ const TodoApp = () => {
       {/* <Navbar />
         <Modal />
         <Form />
-        <UncontrolledForm /> */}
+        */}
       {/* <div className="wrapper"> */}
       <div className="todos">
         <Header>
